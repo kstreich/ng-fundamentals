@@ -5,6 +5,10 @@ export class EventService {
   getEvents() {
     return EVENTS;
   }
+  getEvent(id: number) {
+    console.log(EVENTS);
+    return EVENTS.find(event => event.id === id);
+  }
 }
 
 const EVENTS = [
@@ -14,7 +18,8 @@ const EVENTS = [
     date: "9/26/2036",
     time: "10:00 am",
     price: 599.99,
-    imageUrl: "/assets/images/angularconnect-shield.png",
+    imageUrl:
+      "https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg",
     location: {
       address: "1057 DT",
       city: "London",
@@ -92,7 +97,8 @@ const EVENTS = [
     date: "4/15/2037",
     time: "9:00 am",
     price: 950.0,
-    imageUrl: "/assets/images/ng-nl.png",
+    imageUrl:
+      "https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg",
     onlineUrl: "https://ng-nl.org",
     sessions: [
       {
@@ -148,7 +154,8 @@ const EVENTS = [
     date: "5/4/2037",
     time: "9:00 am",
     price: 759.0,
-    imageUrl: "/assets/images/ng-conf.png",
+    imageUrl:
+      "https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg",
     location: {
       address: "The Palatial America Hotel",
       city: "Salt Lake City",
@@ -230,7 +237,8 @@ const EVENTS = [
     date: "6/10/2037",
     time: "8:00 am",
     price: 800.0,
-    imageUrl: "/assets/images/basic-shield.png",
+    imageUrl:
+      "https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg",
     location: {
       address: "The UN Angular Center",
       city: "New York",
@@ -279,7 +287,8 @@ const EVENTS = [
     date: "2/10/2037",
     time: "9:00 am",
     price: 400.0,
-    imageUrl: "/assets/images/ng-vegas.png",
+    imageUrl:
+      "https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg",
     location: {
       address: "The Excalibur",
       city: "Las Vegas",
