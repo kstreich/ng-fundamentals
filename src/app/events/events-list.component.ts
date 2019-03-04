@@ -6,10 +6,11 @@ import { template } from "@angular/core/src/render3";
   template: `
     <div>
       <h1>Upcoming Events</h1>
+      <div class="jumbotron">
+        <h3>Hello World</h3>
+      </div>
       <hr />
-      <event-thumbnail #thumbnail [event]="event1"></event-thumbnail>
-      <h3>{{ thumbnail.someProperty }}</h3>
-      <button class="btn btn-info" (click)="thumbnail.logFoo()">Log foo</button>
+      <event-thumbnail [event]="event1"></event-thumbnail>
     </div>
   `
 })
