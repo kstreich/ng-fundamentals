@@ -7,10 +7,9 @@ import { template } from "@angular/core/src/render3";
     <div>
       <h1>Upcoming Events</h1>
       <hr />
-      <event-thumbnail
-        (eventClick)="handleEventClicked($event)"
-        [event]="event1"
-      ></event-thumbnail>
+      <event-thumbnail #thumbnail [event]="event1"></event-thumbnail>
+      <h3>{{ thumbnail.someProperty }}</h3>
+      <button class="btn btn-info" (click)="thumbnail.logFoo()">Log foo</button>
     </div>
   `
 })
@@ -29,8 +28,4 @@ export class EventsListComponent {
       country: "England"
     }
   };
-
-  handleEventClicked(data) {
-    console.log("received:", data);
-  }
 }
