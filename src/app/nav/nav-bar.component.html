@@ -1,9 +1,16 @@
 <ul class="nav">
   <li class="nav-item">
-    <a class="nav-link active" [routerLink]="['/events']">All Events</a>
+    <a
+      class="nav-link active"
+      [routerLink]="['/events']"
+      routerLinkActiveOptions="{exact:true}"
+      >All Events</a
+    >
   </li>
   <li class="nav-item">
-    <a class="nav-link" [routerLink]="['/events/new']">Create Event</a>
+    <a class="nav-link" [routerLink]="['/events/new']" routerLinkActive="active"
+      >Create Event</a
+    >
   </li>
   <li class="nav-item">
     <a class="nav-link" href="#">Events</a>
